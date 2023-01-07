@@ -20,7 +20,7 @@ import java.time.Instant;
 @NoArgsConstructor
 public class Message {
     private String message;
-    private long created = Instant.now().getEpochSecond();
+    private long created = Instant.now().toEpochMilli();
 
     public Message(String message) {
         this.message = message;
